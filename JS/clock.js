@@ -1,6 +1,7 @@
 const hourHand = document.querySelector('.hour-hand');
 const minuteHand = document.querySelector('.minute-hand');
 const secondHand = document.querySelector('.second-hand');
+const stars = document.querySelector('.night-effects');
 
 const getTime = () => {
     const date = new Date();
@@ -19,16 +20,18 @@ setInterval(() =>{
     minuteHand.style.transform = `translate(0, -50%) rotate(${minutes * 6}deg)`;
     hourHand.style.transform = `translate(0, -50%) rotate(${hours * 30}deg)`;
 
-    if (hours >= 6 && hours <= 12) {
+    if (hours >= 6 && hours < 12) {
         document.body.style.backgroundColor = "rgb(114, 214, 242)";
+        stars.style.display = 'none'
     }
-    if (hours >= 12 && hours <= 18) {
+    if (hours >= 12 && hours < 18) {
         document.body.style.backgroundColor = "rgb(248, 155, 78)";
+        stars.style.display = 'none'
     }
     if (hours >= 18 && hours <= 23) {
         document.body.style.backgroundColor = "rgb(28, 51, 81)";
     }
-    if (hours >= 1 && hours <= 6) {
+    if (hours >= 0 && hours < 6) {
         document.body.style.backgroundColor = "rgb(14, 30, 52)";
     }  
 

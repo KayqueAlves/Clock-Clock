@@ -7,6 +7,7 @@
 
 body{
     background-color: rgb(114, 214, 242);
+    overflow: hidden;
 }
 
 
@@ -17,6 +18,86 @@ main{
     min-width: 100%;
     min-height: 100vh;
 
+}
+
+.cloc{
+    position: absolute;
+    width: 60px;
+    left: -60px;
+    top: 90%;
+    animation: walk 10s infinite linear;
+}
+
+@keyframes walk{
+    from{
+        left: -60px;
+    }
+    to{
+        left: 100%;
+    }
+}
+
+.cloud{
+    position: absolute;
+    bottom: 90;
+    width: 500px;
+    animation: cloud-pass 50s infinite linear;
+}
+
+@keyframes cloud-pass{
+    from{
+        left: -500px;
+    }
+    to{ left: 100%;}
+}
+
+.cloud2{
+    position: absolute;
+    bottom: 90;
+    width: 440px;
+    animation: cloud2-pass 70s infinite linear;
+}
+
+@keyframes cloud2-pass{
+    from{
+        left: -500px;
+    }
+    to{ left: 100%;}
+}
+
+.star{
+    width: 60px;
+    position: absolute;
+}
+
+.star1{
+    top: 20%;
+    left: 20%;
+}
+
+.star2{
+    top: 10%;
+    left: 10%;
+}
+
+.star3{
+    top: 5%;
+    left: 60%;
+}
+
+.star4{
+    top: 12%;
+    left: 90%;
+}
+
+.star5{
+    top: 2%;
+    left: 75%;
+}
+
+.star6{
+    top: 3%;
+    left: 30%;
 }
 
 .clock{
