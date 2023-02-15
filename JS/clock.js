@@ -30,6 +30,8 @@ setInterval(() =>{
     }
     if (hours >= 18 && hours <= 23) {
         document.body.style.backgroundColor = "rgb(28, 51, 81)";
+        stars.style.display = 'block'
+
     }
     if (hours >= 0 && hours < 6) {
         document.body.style.backgroundColor = "rgb(14, 30, 52)";

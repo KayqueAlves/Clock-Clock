@@ -17,24 +17,6 @@ main{
     align-items: center;
     min-width: 100%;
     min-height: 100vh;
-
-}
-
-.cloc{
-    position: absolute;
-    width: 60px;
-    left: -60px;
-    top: 90%;
-    animation: walk 10s infinite linear;
-}
-
-@keyframes walk{
-    from{
-        left: -60px;
-    }
-    to{
-        left: 100%;
-    }
 }
 
 .cloud{
